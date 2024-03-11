@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<style>
+	li::before{
+		content: '번호';
+	}
+	li::after{
+		/* content: '😃'; */
+		/* 
+		- 도형을 만들려면
+		 display 속성 필수
+		 - 모든 before,after에는
+		 content 속성은 무조건 
+		 넣어야함
+		 글자를 없애도 됨
+		 content:''; //무조건
+		              있긴 해야함
+
+		*/
+		content:'';
+		width: 10px;
+		height: 10px;
+		background: red;
+		display: inline-block;
+	}
+</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+		<li>9</li>
+		<li>10</li>
+	</ul>
+</body>
+</html>
