@@ -1,0 +1,20 @@
+/* 
+자식 , 후손, 형제 선택자
+-가장 마지막 선택자가 타겟이고,
+앞에는 전부 조건이다.
+
+*/
+div > .orange
+{
+	background: orange;
+}
+
+body > div > ul > #apple
+{
+	color: red;
+}
+
+#circle>h1.title>.left.low>#banana
+{
+	background: yellow;
+}

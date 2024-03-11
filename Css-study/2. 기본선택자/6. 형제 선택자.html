@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.orange + li{
+			color: orangered;
+		}
+		tr +tr {}
+
+li+ li{
+	border: 1px solid #000;;
+}
+.red ~ li{
+	background: yellow;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.apple #fox,
+div > div.tiger,
+.banana
+{
+
+}
+
+
+	</style>
+</head>
+<body>
+<!-- 스타일이 같음. (=리셋) -->
+<h1>hello</h1>
+<h2>hello</h2>
+<h3>hello</h3>
+<h4>hello</h4>
+<h5>hello</h5>
+<h6>hello</h6>
+
+	<ul>
+		<li class="orange">qqqq</li>
+		<li class="orange">qqqq</li>
+		<li>qqqq</li>
+		<li>qqqq</li>
+		<li class="red">qqqq</li>
+		<li>qqqq</li>
+		<li>qqqq</li>
+	</ul>
+</body>
+
+</html>
