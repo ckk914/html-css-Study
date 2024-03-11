@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		a{
+			color: orangered;
+		}
+		a:hover{
+			color: blue;
+			font-size: 20px;
+			font-weight: 700;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			background: aquamarine;
+			transition: 0.7s;
+		}
+		.box:hover
+		{
+			width: 200px;
+			background: orange;
+			transition: 0.7s;
+		}
+		.box:active
+		{
+			height: 200px;
+			background: orchid;
+		}
+		#common{
+			width: 100px;
+			margin-top: 20px;
+			padding: 5px;
+			outline: none;
+			transition: 0.7s;
+		}
+		#common:focus{
+			border-color: red;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<a href="#">Hello</a>
+	<div class="box">add</div>
+
+	<input type="text" id="common">
+</body>
+</html>
