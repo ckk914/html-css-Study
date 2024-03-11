@@ -1,0 +1,23 @@
+ul{
+	list-style: none;
+	padding: 0;
+	border: 2px dashed turquoise;
+	
+}
+li{
+	color: blue;
+	background: yellowgreen;
+}
+#blockStyle
+{
+	width: 20%;
+	margin: auto;
+}
+*{
+	font-family: sans-serif;
+	font-style: italic;
+	border: 1px solid #000;
+}
+body{
+	border: 1px solid #000;
+}
