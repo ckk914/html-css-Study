@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*
+		{
+			box-sizing: border-box;
+		}
+		.box{
+			width: 150px;
+			height: 150px;
+			background: gray;
+			margin: 10px auto 0;
+		}
+		.box1{
+			background: tomato;
+			border-width: 10px; /*선굵기*/
+			border-style:solid; /*선모양*/
+			border-color: orange;/*선색*/
+			
+		}
+		.box2{
+			border: 4px double aquamarine;
+		}
+		.box3{
+			background: goldenrod;
+			border-bottom: 4px dashed greenyellow;
+			border-left: 4px solid green;
+			border-top: 4px double aqua;
+			background-repeat: no-repeat;
+			border-top-color: blueviolet;
+		}
+	</style>
+</head>
+<body>
+	<!-- .comtaimer>.box.box$*3 -->
+	<div class="comtaimer">
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+	</div>
+</body>
+</html>

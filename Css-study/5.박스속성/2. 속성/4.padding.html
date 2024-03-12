@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	.container{
+width: 500px;
+height: 500px;
+background: orange;
+margin: 100px;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 40px;
+padding-bottom: 30px;
+box-sizing: border-box;
+
+	}
+	.box{
+width: 50%;
+height: 50%;
+background: yellowgreen;
+font-size: 1.5em;
+color: wheat;
+padding: 20px;
+box-sizing: border-box;
+	}
+	.card{
+		width: 250px;
+		height: 250px;
+		border: 2px solid gray;
+		margin: 50px auto;
+		border-radius: 15px;
+		box-shadow: 2px 2px 5px 5px #999;
+		/* padding: 3px; */
+	}
+	.card .image{
+		border: 2px solid lightgray;
+		height: 250px;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+	.card .image img{
+		height: 100%;
+	}
+	.card .content{
+		background: lightgrey;
+		text-align: center;
+	}
+</style>
+</head>
+<body>
+	<div class="card">
+		<div class="image">
+			<img src="./bird.png" alt="">
+		</div>
+		<p class="content">
+			참새
+		</p>
+	</div>
+	<div class="container">
+		<div class="box">hihi</div>
+	</div>
+
+</body>
+</html>

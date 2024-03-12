@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container{
+			width: 100px;
+			height: 300px;
+			background: skyblue;
+			/* padding: 30px;  */
+			/* Padding은 width에 좌우더해지게 된다 총 width 960px */
+		}
+		.box{
+			height: 200px;
+			background: orange;
+			max-width: 700px;
+			min-width:200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>
+	</div>
+</body>
+</html>
