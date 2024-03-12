@@ -268,4 +268,5 @@ height + 패딩 사이즈
 ### border-color: orange;/*선색*/
 ---
 
-
+ border-radius: 50%;
+둥글게 그림
