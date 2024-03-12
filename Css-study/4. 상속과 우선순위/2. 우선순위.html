@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* 1 점 */
+		div
+		{
+			color: violet;
+		}
+		/* 100점 */
+		#c-g{
+color: blue;
+		}
+		/* 100점 */
+		#c-y
+		{
+color: green;
+		}
+		/*  1점 */
+		body{
+			color: aqua;
+		}
+		/* 1점 */
+		dlv{
+			color: rebeccapurple;
+		}
+		/* 1 */
+		h1{
+			color: lightcoral;
+		}
+		/* 100+1=101점 */
+		.bbb h1{
+			color: aqua;		
+		}
+     /* 10+1점 */
+		#aaa h1{
+			color: orangered;
+		}
+		/* 100+1+10+1 = 112점 */
+		#aaa div.bbb h1{
+			color: greenyellow;
+		}
+		/* 100+10+1 = 111점 */
+		#aaa .bbb h1{
+			color: tomato;
+		}
+		/* 1+100+1+10+1 113 */
+		div#aaa div.bbb h1{
+		color: aqua;
+		}
+		/* 12점 */
+		div.bbb > h1{
+			color: violet;
+		}
+	</style>
+</head>
+<body>
+  <!-- div{안녕하세요$}*5 -->
+  <div id="c-y" class="c-g" 
+  style="color: orange;">안녕하세요1</div>
+  <div id="c-y" class="c-g">안녕하세요2</div>
+  <div class="c-g">안녕하세요3</div>
+  <div>안녕하세요4</div>
+  <p>안녕하세요5</p>
+  
+	<!-- #aaa>.bbb>h1{안녕하세요6}-->
+	<div id="aaa">
+		<div class="bbb">
+			<h1 >안녕하세요6</h1>
+		</div>
+	</div>
+</body>
+</html>
