@@ -1,0 +1,29 @@
+section{
+	width: 550px;
+	border: 3px double #123456;
+}
+section .title{
+	background: skyblue;
+	font-weight: 700;
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 15px 0;
+	border-bottom: 3px solid #123456;
+	letter-spacing: 10px;
+}
+section .content{
+	padding: 10px;
+}
+section .content h2 
+{
+	font-size: 1.2em;
+	font-weight: 700;
+}
+
+section .content p {
+	margin-top: 10px;
+}
+
+section .content:last-child{
+	border-top: 3px dotted #123456;
+}
