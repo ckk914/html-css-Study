@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container1{
+			 border-color: red;
+		}
+		/* 가상 클래스 - 다른 클래스에서 쓸 수 있게 클래스를 만들어서*/ 
+		/* 돌려쓴다 (해제가 필요한 부모에게 붙인다.)*/
+		.clearfix::after{
+			content: '';  /*after 쓰면 무조건 넣어야함*/
+			display: block; /**/
+			clear: both;
+		}
+		
+		.box{
+			width: 200px;
+			height: 150px;
+			border: 3px solid green;
+			background: yellowgreen;
+			border-radius: 20px;
+			float: left;
+		}
+		.container2{
+border-color: greenyellow;
+		}
+		.container3{
+
+			border-color: orange;
+		}
+		.ct{
+			width: 700px;
+			padding: 20px;
+			margin: 20px;
+			border: 3px solid;
+		}
+		/* .vbox{
+			clear:both
+		} */
+	</style>
+</head>
+<body>
+
+	<div class="ct container1 clearfix">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<!-- <div class="vbox"></div> -->
+	</div>
+	<div class="ct container2 clearfix">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<!-- <div class="vbox"></div> -->
+	</div>
+	<div class="ct container3 clearfix">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<!-- <div class="vbox"></div> -->
+	</div>
+</body>
+</html>

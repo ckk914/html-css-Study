@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.box{
+		width: 150px;
+		height: 150px;
+		background: orange;
+		border: 4px solid tomato;
+		font-size: 50px;
+		font-weight: 700;
+		margin: 10px;
+		border-radius: 20px;
+		/* 박스 수평 배치 - 브라우저 공간 없음 밑으로 내려감*/
+		/* left 왼쪽부터아래로, right 오른쪽부터 아래로 */
+		float: left; /*right 이면 clear도 right*/
+	}
+	/* float 항상 3행 3열 만들기 */
+	/* .box:nth-child(4),.box.box:nth-child(7) */
+	/* 3열  3n+1  4열 4n+!  5열 5n+1 */
+	/* x열 xn+1 */
+	.box:nth-child(3n+1)
+	{
+		/* 강제 줄바꿈 같은 느낌 */
+		/* 수평 배치 해제 */
+clear: both;  /*L,R 상관없이 다 알아서 클리어 함*/
+	}
+
+</style>
+<body>
+	<!-- .container>.box{$}*9 -->
+	<div class="container">
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+		<div class="box">4</div>
+		<div class="box">5</div>
+		<div class="box">6</div>
+		<div class="box">7</div>
+		<div class="box">8</div>
+		<div class="box">9</div>
+	</div>
+</body>
+</html>
