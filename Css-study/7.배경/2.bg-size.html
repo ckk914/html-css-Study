@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	.box{
+		/* 사진 액자 400 x300  4:3 비율*/
+		width: 400px;
+		height: 300px;
+		border: 2px solid red;
+		margin: 50px auto;
+   /* 사진 사이즈 600 x 385  3:2비율 */
+	 /*             400  x 260  하단 빈공간 생김 */
+	 /*             450  x 300  세로로 맞춰야 액자의 빈공간 거의 없게 됨/*/ 
+	 /* 원본과 가로 세로가 비율이 다르면 무슨 짓을 해도 못맞춤 */
+		background-image: url(../../img/tulip.jpg);
+		background-repeat: no-repeat;
+		/* background-size: 480px;   가로 기준 사이즈임 */
+		background-size: cover;  /*손실 최소화 하고알아서 띄움*/
+		background-position: -50px 0;
+
+	}
+</style>
+<body>
+	<div class="box"></div>
+</body>
+</html>
