@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* 공통 폰트 스타일 */
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: '굴림체', serif;
+}
+
+section {
+  /* background: orange; */
+  width: 70%;
+  margin: 50px auto;
+}
+
+section .main-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  /* background: skyblue; */
+}
+section .contents {
+  /* background: orange; */
+  margin-top: 20px;
+}
+section .contents .essay {
+  /* border: 3px solid #000; */
+  margin-bottom: 15px;
+}
+section .contents .essay .sub-title {
+  background:  
+  url('../../img/bg_bul.gif')
+  no-repeat left center;
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: sans-serif;
+  /* text-indent: 20px; */
+  margin-bottom: 15px;
+  padding: 10px 20px;
+}
+section .contents .essay .content {
+	background: pink
+url('../../img/bg_line.gif')
+repeat-x left bottom;
+  
+	padding: 15px 20px 35px;
+	text-align: justify;
+}
