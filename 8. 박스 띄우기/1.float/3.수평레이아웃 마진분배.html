@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	*
+	{
+		box-sizing: border-box;
+	}
+	/* 부모한테 붙이기 */
+	.clearfix::after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+	.container{
+		width: 600px;
+		border: 2px solid gray;
+	}
+	.box{
+		width: 23.75%;
+		height: 100px;
+		background: orange;
+		border: 2px solid red;
+		float:left;
+		margin: 10px 0;
+		margin-right: 1%;
+	}
+	.box:first-child{
+		margin-left: 1%;
+	}
+</style>
+<body>
+	<div class="container clearfix">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+
+</body>
+</html>
