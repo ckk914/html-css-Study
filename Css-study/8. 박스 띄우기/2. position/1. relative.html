@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container{
+    margin: 100px;
+    
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    
+    background-color: orange;
+    border: 4px solid red;
+    font-size: 30PX;
+    /* 텍스트 중앙 정렬 */
+    /* X축 중앙 정렬 */
+    text-align: center;
+    /* 세로 중앙정렬 방법1(하위호환용) */
+    /* line-height: 100PX;  */
+    /*ㄴ이걸로도 세로 센터로 맞출 수 있음*/
+    /* 세로 중앙정렬 방법2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* vertical-align은 너무 옛날 */
+  }
+  .box:nth-child(2){
+    /* position : relative: 기존 자리 기준으로 이동함 */
+    position: relative;
+    /* 기존 보다 10px오른쪽 감 */
+    /* left: 50px;  */
+                 /* -10px이면 반대로 10px 이동됨 */
+                 /*right로 하면 기준이 반대  */
+                 top: 30px; 
+                 left: 50px;
+
+  }
+</style>
+<body>
+  <!-- .container>.box{$}*3 -->
+  <div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+</body>
+</html>

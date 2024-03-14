@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko  ">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .root {
+    width: 600px;
+    height: 500px;
+    border: 4px dashed orange;
+    padding: 100px;
+    font-size: 30px;
+    position: relative;
+  }
+
+  .parent {
+    width: 400px;
+    height: 300px;
+    border: 4px dashed blue;
+    padding: 50px;
+    position: relative; 
+    /*ㄴ 부모에 속성 부여*/
+  }
+/* 자식 */
+  .child {
+    width: 120px;
+    height: 80px;
+    border: 4px dashed red;
+    background: tomato;
+    border-radius: center;
+    align-items: center
+  }
+/* 절대 이동 */
+  .abs {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  /* 닫기버튼 스타일  */
+  .parent .remove {
+      color: #fff;
+      background: red;
+      font-size: 40px;
+      font-weight: 700;
+      text-decoration: none;
+      width: 50px;
+      height: 50px;
+      display: block;
+      border-radius: 50%;
+      border: 3px solid orangered;
+      display: flex;  
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      position: absolute;
+      top:-35px;
+      right:-30px;
+    }
+    
+</style>
+
+<body>
+  <!-- .root>.parent>.child{$}*3 -->
+  <div class="root">
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child abs">2</div>
+      <div class="child">3</div>
+      <a class="remove"href="#">X</a>
+    </div>
+  </div>
+</body>
+
+</html>

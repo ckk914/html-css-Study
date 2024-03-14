@@ -1,0 +1,83 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      height: 2000px;
+    }
+
+    header {
+      border-bottom: 2px solid gray;
+      /* position absolute, fixed를 걸면 */
+      /* width의 기본값 100%가 깨진다. */
+      width: 100%;
+      /* 언제나 브라우저 전체 기준으로 움직임 */
+      position: fixed;
+      top: 0;
+    }
+    header h1 {
+      font-size: 40px;
+      padding: 0;
+      margin: 20px 20px 30px;
+      /* background: orange; */
+      float: left;
+    }
+    header nav {
+      /* background: tomato; */
+      float: right;
+    }
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+    header nav ul li {
+      /* border: 1px solid #000; */
+      float: left;
+      font-size: 1.5em;
+      font-weight: 700;
+      margin-right: 30px;
+    }
+
+
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    span{
+      width: 200px;
+      height: 200px;
+      background: orange;
+      font-size: 3em;
+      margin-top: 150px;
+      /* 인라인 요소에 float 이나 position 걸면 */
+      /* position : absolute를 걸면  */
+      /* 자동으로 블록요소로 변경됨 */
+      /* float: left만 해도 블록으로 됨*/
+      
+    }
+  </style>
+</head>
+<body>
+  
+
+  <!-- header>h1+(nav>ul>li*4) -->
+  <header class="clearfix">
+    <h1>Logo</h1>
+    <nav>
+      <ul class="clearfix">
+        <li>소개</li>
+        <li>커뮤니티</li>
+        <li>자료실</li>
+        <li>회원가입</li>
+      </ul>
+    </nav>
+  </header>
+
+  <span>룰루랄라</span>
+</body>
+</html>
