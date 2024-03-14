@@ -1,0 +1,128 @@
+@import url('../common.css');
+/* h1 */
+*{
+  font-family: 'NGothic', sans-serif;
+}
+header h1{
+  font-size: 80px;
+  background: orange;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 10px;
+  
+}
+header span{
+  padding-top: 10px;
+  font-size: 18px;
+  display: block;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+/*  h2 */
+header h2{
+  background: lightgray;
+  text-align: center;
+}
+/* container */
+.container aside{
+  float: left;
+  width: 20%;
+}
+
+.container .main-content{
+  float: left;
+  width: 60%;
+}
+.container .banner{
+  float: left;
+  width: 20%;
+}
+.container .side-menu h3{
+  background: rgb(148, 38, 38);
+  color: white;
+  padding: 10px;
+}
+.container .side-menu ul{
+padding: 10px;
+}
+.container .side-menu li{
+text-decoration: underline;
+line-height: 3;
+}
+/* main */
+.main-content{
+  background: lightgray;
+}
+.main-content .title{
+background: #112e68;
+color: white;
+margin-top: 20px;
+padding: 10px;
+}
+.main-content .artist{
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px;
+
+}
+.main-content .detail{
+  margin-top: 10px;
+  padding: 10px;
+}
+/* 배너 작업 banner */
+.banner .all{
+  font-size: 30px;
+  text-decoration: underline;
+  color: gray;
+  padding: 10px;
+  margin-top: 20px;
+  display: block;
+}
+.banner .love{
+  font-size: 30px;
+  text-decoration: underline;
+  color: orange;
+  padding: 10px;
+  /* margin-top: px; */
+  display: block;
+}
+.banner strong{
+  font-size: 30px;
+  padding: 10px;
+  /* margin-top: px; */
+  display: block;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+.banner .link{
+
+}
+.banner .link a{ 
+   text-decoration: underline;
+   font-weight: 700;
+   font-size: 19px;
+   display: block;
+   padding-left: 10px;
+   padding-bottom: 5px;
+  }
+.banner .link span{
+  font-size: 14px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  display: block;
+}
+/* end container */
+footer address{
+  text-align: center;
+background: navy;
+color: white;
+padding: 10px;
+}
+footer a{
+  text-decoration: underline;
+}
+footer span{}
+
+

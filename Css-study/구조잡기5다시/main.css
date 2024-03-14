@@ -1,0 +1,43 @@
+section {
+  width: 300px;
+  background: pink;
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 30px auto 0;
+  position: relative;
+}
+
+section h1 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #080;
+  margin-bottom: 15px;
+}
+
+section .content {
+  padding-left: 10px;
+}
+
+section .content li {
+  /* border: 1px solid #000; */
+  margin-bottom: 5px;
+}
+
+section .content li a {
+  color: #666;
+  font-size: 0.9em;
+}
+
+section .content li a:hover {
+  color: #00f;
+  text-decoration: underline;
+}
+section .more{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+section .more a {
+  color: #00f;
+  /* text-decoration: underline; */
+}

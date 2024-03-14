@@ -1,0 +1,101 @@
+@import url('../../common.css');
+
+/* base style */
+body {
+  background: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  font-family: '굴림', 'Gulim', serif;
+}
+
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+  /* background: orange; */
+}
+
+
+/* header style */
+#wrapper header {
+  background: #123456;
+  color: #fff;
+  padding: 10px;
+}
+#wrapper header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #cc0;
+  text-align: center;
+  font-family: '휴먼모음T', cursive;
+}
+
+#wrapper header h1 strong {
+  font-size: 3em;
+  color: #fff;
+}
+#wrapper header h1 span {
+  font-size: 1.5em;
+}
+#wrapper header h1 em {
+  font-size: 2em;
+  color: #ccc;
+}
+/* end header style */
+
+/* begin container style */
+#wrapper .container {
+  background: #ccc;
+  width: 100%;
+  position: relative;
+}
+
+#wrapper .container .menu {
+  border: 3px solid blue;
+  width: 20%;
+  /* float: left; */
+  position: absolute;
+  padding: 20px;
+}
+
+#wrapper .container .menu li {
+  margin-bottom: 8px;
+  text-decoration: underline;
+}
+#wrapper .container .menu li a:hover {
+  color: #662;
+  border-bottom: 1px dashed #662;
+}
+
+#wrapper .container .content {
+  width: 80%;
+  border: 3px solid yellow;
+  /* float: left; */
+  position: relative;
+  left: 20%;
+  background: #fff;
+}
+#wrapper .container .content h2 {
+  background: #800;
+  color: #ee0;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px 20px;
+  font-family: '궁서', 'Gungseo',
+   cursive;
+}
+#wrapper .container .content p {
+  padding: 20px;
+  text-align: justify;
+}
+
+
+
+/* footer style */
+footer {
+  background: #aaa;
+  padding: 10px 20px;
+}
+footer address {
+  color: #000;
+}
