@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .box  {
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 50px;
+    transition: 1s;
+    /* transition-property: width,; 무엇을 */
+    /* 여러개면 콤마, 넘 많으면 all */
+    /* all 이기본값 */
+    /* transition-property: all; 무엇을 */
+    
+    /* transition-duration: 3s,1s;    얼마나 */
+    /* tansition을 풀릴때도 걸리게 할려면
+       원본에 거세요.
+    */
+    /* transition-delay: 50ms; 1초 있다가 동작 */
+    /* transition-timing-function: linear; */
+    /* ㄴ등속으로 감 */
+    transition: all 1s 50ms linear;
+    /* 순서 상관없는데 초만 앞에꺼가 duration */
+    /* 뒤에꺼가 delay : 기본값0 */
+  }
+  .box:hover{
+    width: 300px;
+    background: yellowgreen;
+  }
+</style>
+<body>
+  
+  <div class="box"></div>
+
+</body>
+</html>
