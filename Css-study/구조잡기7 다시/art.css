@@ -1,0 +1,115 @@
+@import url('../common.css');
+body{
+  font-size: 14px;
+  background: #aaa;
+  font-family: 'NGodic',serif;
+}
+body {
+  font-size: 14px;
+  background: #aaa;
+  font-family: 'NGthic', sans-serif;
+}
+
+#wrapper {
+  background: #fff;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#wrapper header {
+  /* border: 2px solid red; */
+  color: #fff;
+  text-align: center;
+}
+#wrapper header h1 {
+  background: #fa0;
+  font-size: 5.5em;
+  font-weight: 700;
+  padding: 10px;
+}
+#wrapper header h1 span {
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
+}
+#wrapper header .stit {
+  background: #ccc;
+  color: #333;
+  padding: 5px 0;
+}
+#wrapper .container {
+  border: 2px solid blue;
+}
+
+/* 자식 전체 선택 */
+#wrapper .container > *{
+  /* border: 2px solid violet; */
+  float: left;
+}
+
+
+#wrapper .container .side-menu{
+  widows: 25%;
+}
+
+/*  */
+#wrapper .container .side-menu h3{
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #fff;
+  background: #900;
+  padding: 10px;
+}
+
+#wrapper .container .side-menu ul{
+margin-top: 5px;
+}
+#wrapper .container .side-menu ul li{
+  padding: 10px;
+}
+#wrapper .container .side-menu ul li a{
+font-weight: 700;
+text-decoration: underline;
+}
+#wrapper .container .side-menu ul li a:hover{
+border: 1px dashed #000;
+}
+
+/* 메인 */
+#wrapper .container .main-content{
+  width: 50%;
+  background: #ddd;
+  color: #123456;
+}
+#wrapper .container .main-content .art-piece{
+  border: 3px solid #000;
+  margin-top: 10px;
+  font-size: 1.3em;
+  font-weight: 700;
+  padding: 10px;
+}
+
+#wrapper .container .main-content .art-piece .title{
+  color: #ddd;
+  background: #123456;
+  padding: 7px 5px;
+}
+#wrapper .container .main-content .art-piece .title a{
+  /* a태그 블록으로 만들면 클릭 영역이 늘어남 */
+  display: block;
+}
+#wrapper .container .main-content .art-piece .title a:hover{
+color: yellow;
+}
+#wrapper .container .main-content .artist{
+  /* 가운데 녀석에게 마진을 준다. */
+  margin: 20px 0;
+}
+/* 베너 */
+#wrapper .container .banner{
+  width: 25%;
+}
+/* footer */
+#wrapper footer {
+  border: 2px solid yellow;
+}
