@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .wrapper{
+    border: 3px solid #000;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap:  wrap; */
+    flex-flow: row wrap;
+    
+  }
+  .box{
+    width: 150px;
+    height: 100px;
+    border: 4px solid red;
+    font-size: 40px;
+  }
+  @media (max-width: 500px){
+    /* 반응형 flex 대응 */
+    .wrapper{
+      /* flex-direction: column; */
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+    <div class="box">E</div>
+    <div class="box">F</div>
+  </div>
+</body>
+</html>
