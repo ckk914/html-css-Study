@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .box{
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    margin: 30px;
+
+    animation: rotation 2s linear;
+    
+    /* animation-direction: alternate; */
+  }
+
+  @keyframes rotation{
+    0%{
+/* 제자리 */
+     transform:translate(0,0); 
+    }
+    25%
+    {
+/* 100px 왼쪽이동 */
+transform:translate(100px,0);
+    }
+    50%{
+      transform:translate(100px,100px);
+    }
+    75%{
+      transform:translate(0,100px);
+    }
+    100%{
+      transform:translate(0,0);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
