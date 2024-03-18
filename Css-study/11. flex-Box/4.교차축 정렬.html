@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .wrapper{
+    width: 800px;
+    height: 600px;
+    border: 3px solid #000;
+    /* padding: 20px; */
+    display: flex;
+    
+    flex-direction: row;
+    /* 위아래 */
+    align-content: center;
+    /* 좌우 */
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    /* 시작점에 붙임 */
+    /* 주축 정렬 지원하는 것 */
+    /* flex-start, center, flex-end */
+    /*  왼쪽 정렬     가운데   오른쪽 정렬 */
+    /* justify-content: center; */
+    /*  space-between; */
+    /* 3개 네모 있으면 2개는 좌우 딱 붙고
+       한개는 가운데  */
+       /* space-evenly */
+       /* 모든 애들 동일하게 간격 */
+       /* align-content:  다같이 움직임/
+     /* justify-content: space-around; */
+
+
+
+  }
+  .box{
+    width: 200px;
+    height: 100px;
+    border: 4px solid red;
+    font-size: 40px;
+  }
+
+
+  @media (max-width: 500px){
+    /* 반응형 flex 대응 */
+    .wrapper{
+      /* flex-direction: column; */
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box">A</div>
+    <div class="box">B</div>
+    <div class="box">C</div>
+    <div class="box">D</div>
+    <div class="box">E</div>
+  </div>
+</body>
+</html>
